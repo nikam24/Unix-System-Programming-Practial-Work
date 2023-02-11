@@ -4,7 +4,7 @@ In this project, we demonstrate how to automate a shell script using crontab on 
 
 Our shell script will write into mylog.txt file every minute.
 Shell script : 
-[Screenshot description](https://github.com/nikam24/Unix-System-Programming-Practial-Work/blob/main/Screenshot%20from%202023-02-11%2016-30-08.png)
+![Screenshot description](https://github.com/nikam24/Unix-System-Programming-Practial-Work/blob/main/Screenshot%20from%202023-02-11%2016-30-08.png)
 
 ## Prerequisites
 - Linux-based operating system (such as Ubuntu)
