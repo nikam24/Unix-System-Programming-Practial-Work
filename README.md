@@ -2,6 +2,10 @@
 
 In this project, we demonstrate how to automate a shell script using crontab on a Linux-based operating system. This guide assumes that you already have a shell script that you want to automate, and a basic understanding of the command line and crontab.
 
+Our shell script will write into mylog.txt file every minute.
+Shell script : 
+[Screenshot description](https://github.com/nikam24/Unix-System-Programming-Practial-Work/blob/main/Screenshot%20from%202023-02-11%2016-30-08.png)
+
 ## Prerequisites
 - Linux-based operating system (such as Ubuntu)
 - Text editor (such as nano or vim)
@@ -13,16 +17,25 @@ In this project, we demonstrate how to automate a shell script using crontab on 
 ```
 crontab -e
 ```
+[Screenshot description](https://github.com/nikam24/Unix-System-Programming-Practial-Work/blob/main/Screenshot%20from%202023-02-11%2016-34-43.png)
 2. In the editor, add the following line at the end: `* * * * * /path/to/script.sh`. This sets the cronjob to run the script every minute.
 ```
 * * * * * /path/to/script.sh
 ```
+[Screenshot description](https://github.com/nikam24/Unix-System-Programming-Practial-Work/blob/main/Screenshot%20from%202023-02-11%2016-34-51.png)
 3. Save and close the editor. 
 4. Check if the cronjob was correctly set by running `crontab -l`.
 ```
 crontab -l
 ```
+[Screenshot description](https://github.com/nikam24/Unix-System-Programming-Practial-Work/blob/main/Screenshot%20from%202023-02-11%2016-35-06.png)
 5. Wait for a minute and check the output of the shell script in the log file.
+
+Before updating log file : 
+[Screenshot description](https://github.com/nikam24/Unix-System-Programming-Practial-Work/blob/main/Screenshot%20from%202023-02-11%2016-30-35.png)
+
+After updating log file :
+[Screenshot description](https://github.com/nikam24/Unix-System-Programming-Practial-Work/blob/main/Screenshot%20from%202023-02-11%2016-30-44.png)
 
 Note: 
 - The path to the script must be the absolute path, not the relative path.
