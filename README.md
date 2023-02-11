@@ -10,9 +10,18 @@ In this project, we demonstrate how to automate a shell script using crontab on 
 
 ## Steps
 1. Open terminal and run the command `crontab -e`. This will open the crontab editor.
+```
+crontab -e
+```
 2. In the editor, add the following line at the end: `* * * * * /path/to/script.sh`. This sets the cronjob to run the script every minute.
+```
+* * * * * /path/to/script.sh
+```
 3. Save and close the editor. 
 4. Check if the cronjob was correctly set by running `crontab -l`.
+```
+crontab -l
+```
 5. Wait for a minute and check the output of the shell script in the log file.
 
 Note: 
